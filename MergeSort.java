@@ -68,8 +68,8 @@ public class MergeSort {
 
     public static void main(String[] args) {
         // int[] a = {-100, -100, 2,0,13,1, 10, 42, 924, -124, 4, -11};
-        // int[] merged = mergeSort(a);
-        // for(int i = 0; i < merged.length; i++)
-        //     System.out.print(merged[i] + " ");
+        // int[] sorted = mergeSort(a);
+        // for(int i = 0; i < sorted.length; i++)
+        //     System.out.print(sorted[i] + " ");
     }
 }

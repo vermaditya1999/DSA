@@ -53,8 +53,8 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,5};
-        System.out.println(recurBinSearch(arr, 5));
-        System.out.println(iterBinSearch(arr, 10));
+        // int[] arr = {1,2,3,4,5};
+        // System.out.println(recurBinSearch(arr, 5));
+        // System.out.println(iterBinSearch(arr, 10));
     }
 }

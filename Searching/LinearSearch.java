@@ -1,11 +1,12 @@
 /**
- *  Linear Search.
+ *  LinearSearch
  *  @author: himself
  */
 public class LinearSearch {
 
     /**
-     *  Linear Search.
+     * Linear Search.
+     * Time Complexity: O(n)
      */
     static int linearSearch(int[] arr, int n) {
         for(int i = 0; i < arr.length; i++) {

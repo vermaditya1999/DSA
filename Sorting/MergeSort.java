@@ -6,6 +6,7 @@ public class MergeSort {
 
     /**
      * Merger Function.
+     * Time Complexity: O(n)
      */
     static int[] merge(int[] a, int[] b) {
         int n1 = a.length, n2 = b.length;
@@ -40,6 +41,7 @@ public class MergeSort {
 
     /**
      * MergeSort.
+     * Time Complexity: O(nlg(n))
      */
     static int[] mergeSort(int[] arr) {
         int n = arr.length;

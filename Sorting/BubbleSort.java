@@ -6,6 +6,7 @@ public class BubbleSort {
 
     /**
      * Bubble Sort.
+     * Time Comlpexity: O(n^2)
      */
     static int[] bubbleSort(int[] arr) {
         int n = arr.length;

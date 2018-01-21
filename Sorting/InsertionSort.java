@@ -6,6 +6,7 @@ public class InsertionSort {
 
     /**
      * Insertion Sort.
+     * Time Complexity: O(n^2)
      */
     static int[] insertionSort(int[] arr) {
         int n = arr.length;

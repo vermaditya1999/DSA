@@ -6,7 +6,7 @@ public class BinarySearch {
 
     /**
      *  Iterative Binary Search.
-     *  Time Complexity : O(lg(n))
+     *  Time Complexity: O(lg(n))
      */
     static int iterBinSearch(int[] arr, int n) {
         int l = 0, r = arr.length - 1, mid;
@@ -24,7 +24,7 @@ public class BinarySearch {
 
     /**
      *  Recursive Binary Search.
-     *  Time Complexity :  O(lg(n))
+     *  Time Complexity:  O(lg(n))
      */
     static int recurBinSearch(int[] arr, int n) {
         return recurBinSearch(arr, n, 0, arr.length - 1);
@@ -41,15 +41,6 @@ public class BinarySearch {
                 return recurBinSearch(arr, n, l, mid - 1);
         }
         return -1;
-    }
-
-    /**
-     *  Function for printing integer array.
-     */
-    static void printArray(int[] arr) {
-        for(int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
     }
 
     public static void main(String[] args) {

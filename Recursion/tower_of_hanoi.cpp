@@ -3,6 +3,8 @@
 using namespace std;
 
 void hanoi(int[], int, int, int, int);
+void hanoi_ae(int[], int, int, int, int);
+void hanoi_be(int[], int, int, int, int);
 
 int main() {
    	int n; cin >> n;
@@ -27,3 +29,24 @@ void hanoi(int arr[], int n, int beg, int aux, int end) {
 		hanoi(arr, n - 1, aux, beg, end);
 	}
 }
+
+// Restriction: There can't be any move between second and third peg
+void hanoi_ae(int arr[], int n, int beg, int aux, int end) {
+	if (n >= 0) {
+		hanoi_ae(arr, n - 1, beg, end, aux);
+		cout << "Move disk " << arr[n] << " from " << beg << " to " << end << endl;
+		hanoi_be(arr, n - 1, aux, beg, end);
+	}
+}
+
+// Restriction: There can't be any move between first and third peg
+void hanoi_be(int arr[], int n, int beg, int aux, int end) {
+	if (n >= 0) {
+		hanoi_be(arr, n - 1, beg, aux, end);
+		cout << "Move disk " << arr[n] << " from " << beg << " to " << aux << endl;
+		hanoi_be(arr, n - 1, end, aux, beg);
+		cout << "Move disk " << arr[n] << " from " << aux << " to " << end << endl;
+		hanoi_be(arr, n - 1, beg, aux, end);
+	}
+}
+

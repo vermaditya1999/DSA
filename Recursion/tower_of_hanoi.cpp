@@ -30,7 +30,7 @@ void hanoi(int arr[], int n, int beg, int aux, int end) {
 	}
 }
 
-// Restriction: There can't be any move between second and third peg
+// Restriction: There can't be any move between aux and end peg
 void hanoi_ae(int arr[], int n, int beg, int aux, int end) {
 	if (n >= 0) {
 		hanoi_ae(arr, n - 1, beg, end, aux);
@@ -39,7 +39,7 @@ void hanoi_ae(int arr[], int n, int beg, int aux, int end) {
 	}
 }
 
-// Restriction: There can't be any move between first and third peg
+// Restriction: There can't be any move between beg and end peg
 void hanoi_be(int arr[], int n, int beg, int aux, int end) {
 	if (n >= 0) {
 		hanoi_be(arr, n - 1, beg, aux, end);
@@ -49,4 +49,3 @@ void hanoi_be(int arr[], int n, int beg, int aux, int end) {
 		hanoi_be(arr, n - 1, beg, aux, end);
 	}
 }
-
